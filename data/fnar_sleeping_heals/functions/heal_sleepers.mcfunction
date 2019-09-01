@@ -1,2 +1,2 @@
-execute as @p if score @s fnarHealSleepers matches 1.. run effect give @s minecraft:instant_health 1 2 true
-execute as @p if score @s fnarHealSleepers matches 1.. run scoreboard players set @s fnarHealSleepers 0
+effect give @p[scores={fnarHealSleepers=1..}] minecraft:instant_health 1 2 true
+scoreboard players set @p[scores={fnarHealSleepers=1..}] fnarHealSleepers 0
